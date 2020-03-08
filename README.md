@@ -12,7 +12,7 @@ poetry build
 ### installation
 
 ```sh
-pip3 install dist/todoer-0.1.0-py3-none-any.whl
+pip3 install todoer
 ```
 
 ### usage
