@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "todoer"
-version = "0.1.0"
+version = "0.1.1"
 description = "Removes todo that match a certain regex."
 authors = ["Max Wittig <max.wittig95@gmail.com>"]
 readme = "README.md"

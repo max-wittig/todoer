@@ -10,7 +10,7 @@ def run(
     description_pattern: Optional[str] = None,
     creator_username: Optional[str] = None,
 ):
-    for todo in gl.todos.list():
+    for todo in gl.todos.list(as_list=False):
         todo_title: str = todo.attributes["target"]["title"]
         todo_description: str = todo.attributes["target"]["description"]
         todo_creator: str = todo.attributes["author"]["username"]

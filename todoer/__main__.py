@@ -2,7 +2,6 @@ import argparse
 import sys
 import os
 import gitlab
-from pathlib import Path
 from todoer import todoer
 from typing import Dict, Any
 from loguru import logger
@@ -40,7 +39,7 @@ def get_gitlab() -> gitlab.Gitlab:
     gitlab_token: str = os.getenv("GITLAB_TOKEN") or sys.exit(
         "No GITLAB_TOKEN provided."
     )
-    return gitlab.Gitlab(gitlab_url, gitlab_token)
+    return gitlab.Gitlab(gitlab_url, gitlab_token, per_page=100)
 
 
 def main():
